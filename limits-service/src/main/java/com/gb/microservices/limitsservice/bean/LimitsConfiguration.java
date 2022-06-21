@@ -1,4 +1,4 @@
-package com.gb.microservices.limitsservice.controller.bean;
+package com.gb.microservices.limitsservice.bean;
 
 public class LimitsConfiguration {
     private int maximum;
