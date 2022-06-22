@@ -18,7 +18,7 @@ public class CurrencyExchangeController {
 
     @Autowired
     private Environment environment;
-    @GetMapping("/current-exchange/from/{from}/to/{to}")
+    @GetMapping("/currency-exchange/from/{from}/to/{to}")
     public ExchangeValue retrieveExchangeValue(@PathVariable String from, @PathVariable String to) {
 
         ExchangeValue exchangeValue = exchangeValueRepository.findByFromAndTo(from, to);  //new ExchangeValue(100L, from, to, BigDecimal.valueOf(65));
